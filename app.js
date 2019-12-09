@@ -1,4 +1,4 @@
-//1.引入express
+//1.引入 express
 const express = require ('express')
 //4.1文件读取
 const fs = require ('fs')
@@ -9,7 +9,7 @@ app.listen(3000,() =>{
     console.log('http://127.0.0.1:3000');
     })
 
-//5.托管静态资源
+//5.托管静态资源    app.use('/static',express.static('public')) static
 app.use('/assets', express.static('assets'))
 //5.1图片资源托管
 app.use('/uploads', express.static('uploads'))
@@ -43,5 +43,7 @@ app.get('/admin',(req,res)=>{
     //     }
     // }) 由于使用6-7直接简写为以下代码
     res.render('admin/index.ejs')
+
+    
 })
 
