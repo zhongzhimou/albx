@@ -1,4 +1,4 @@
-//1.引入 express 修改了
+//1.引入 express
 const express = require ('express')
 //4.1文件读取
 const fs = require ('fs')
@@ -44,6 +44,7 @@ app.get('/admin',(req,res)=>{
     // }) 由于使用6-7直接简写为以下代码
     res.render('admin/index.ejs')
 })
+
 app.get('/admin/comments.ejs',(req,res)=>{
     res.render('admin/comments.ejs')
 })
