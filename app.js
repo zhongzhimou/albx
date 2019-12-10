@@ -71,6 +71,7 @@ app.get('/detail',(req,res)=>{
 app.get('/list',(req,res)=>{
     res.render('list.ejs')
 });
+//更改了
 
 
 
