@@ -33,7 +33,7 @@ app.get('/',(req,res)=>{
     //2.实现渲染，现在暂无数据参与，不使用ejs渲染，使用前后端分离的做法
     //3.返回渲染结果
     res.render('index.ejs')
-})
+});
 app.get('/admin',(req,res)=>{
     // fs.readFile('./views/admin/index.ejs', (err, data) => {
     //     if (err){
@@ -43,9 +43,34 @@ app.get('/admin',(req,res)=>{
     //     }
     // }) 由于使用6-7直接简写为以下代码
     res.render('admin/index.ejs')
-})
-
-app.get('/admin/comments.ejs',(req,res)=>{
+});
+app.get('/admin/categories',(req,res)=>{
+    res.render('admin/categories.ejs')
+});
+app.get('/admin/comments',(req,res)=>{
     res.render('admin/comments.ejs')
-})
+});
+app.get('/admin/posts',(req,res)=>{
+    res.render('admin/posts.ejs')
+});
+app.get('/admin/users',(req,res)=>{
+    res.render('admin/users.ejs')
+});
+app.get('/admin/slides',(req,res)=>{
+    res.render('admin/slides.ejs')
+});
+app.get('/admin/nav-menus',(req,res)=>{
+    res.render('admin/nav-menus.ejs')
+});
+app.get('/admin/nav-menus',(req,res)=>{
+    res.render('admin/nav-menus.ejs')
+});
+app.get('/detail',(req,res)=>{
+    res.render('detail.ejs')
+});
+app.get('/list',(req,res)=>{
+    res.render('list.ejs')
+});
+
+
 
